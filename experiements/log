@@ -1,0 +1,3 @@
+nohup: ignoring input
+STARTING UP AS PROCESS 6222 ON d0mie-Inspiron-N5050 AT Thu  3 Oct 14:18:41 EAT 2019
+error: could not find config file at /home/d0mie/mosesSMT/mosesdecoder/scripts/ems/experiment.perl line 69.

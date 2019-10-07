@@ -1,0 +1,2 @@
+To run the decoder, please call:
+  moses -f /home/d0mie/mosesSMT/Baseline/working/mert-work/filtered/moses.ini -i /home/d0mie/mosesSMT/Baseline/working/mert-work/filtered/input.11448

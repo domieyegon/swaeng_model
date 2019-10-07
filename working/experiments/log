@@ -1,0 +1,16 @@
+nohup: ignoring input
+STARTING UP AS PROCESS 7989 ON d0mie-Inspiron-N5050 AT Thu  3 Oct 15:15:39 EAT 2019
+LOAD CONFIG...
+find: ‘/home/d0mie/mosesSMT/irstlm/bin*’: No such file or directory
+GENERAL:irstlm-dir: file /home/d0mie/mosesSMT/irstlm/bin does not exist!
+find: ‘/home/d0mie/mosesSMT/Baseline/corpus/training/news-commentary-v8.en-sw*’: No such file or directory
+CORPUS:project-syndicate:raw-stem: file /home/d0mie/mosesSMT/Baseline/corpus/training/news-commentary-v8.en-sw does not exist!
+find: ‘/home/d0mie/mosesSMT/Baseline/corpus/training/news-commentary-v8.en-sw.sw*’: No such file or directory
+LM:project-syndicate:raw-corpus: file /home/d0mie/mosesSMT/Baseline/corpus/training/news-commentary-v8.en-sw.sw does not exist!
+find: ‘/home/d0mie/mosesSMT/Baseline/corpus/dev/news-test2008.sw*’: No such file or directory
+TUNING:raw-reference: file /home/d0mie/mosesSMT/Baseline/corpus/dev/news-test2008.sw does not exist!
+find: ‘/home/d0mie/mosesSMT/working/experiments*’: No such file or directory
+GENERAL:working-dir: file /home/d0mie/mosesSMT/working/experiments does not exist!
+find: ‘/home/d0mie/mosesSMT/Baseline/corpus/dev/news-test2008.en*’: No such file or directory
+TUNING:raw-input: file /home/d0mie/mosesSMT/Baseline/corpus/dev/news-test2008.en does not exist!
+Died at /home/d0mie/mosesSMT/mosesdecoder/scripts/ems/experiment.perl line 437.
