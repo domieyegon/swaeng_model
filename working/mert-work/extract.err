@@ -2,11 +2,11 @@ Binary write mode is NOT selected
 Scorer type: BLEU
 name: case value: true
 Loading reference from /home/d0mie/mosesSMT/Baseline/corpus/data-test.true.sw
-.........Data::m_score_type BLEU
+..................................................Data::m_score_type BLEU
 Data::Scorer type from Scorer: BLEU
-loading nbest from run7.best100.out.gz
-Loaded N-best lists : [Wall 6.54993 CPU 6.54257] seconds.
+loading nbest from run2.best100.out.gz
+Loaded N-best lists : [Wall 38.919 CPU 38.81] seconds.
 Binary write mode is NOT selected
-saving the array into run7.features.dat
-saving the array into run7.scores.dat
-Stopping... : [Wall 11.9635 CPU 11.9559] seconds.
+saving the array into run2.features.dat
+saving the array into run2.scores.dat
+Stopping... : [Wall 75.8412 CPU 73.6736] seconds.

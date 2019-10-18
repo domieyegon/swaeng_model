@@ -2,41 +2,23 @@ nohup: ignoring input
 Using SCRIPTS_ROOTDIR: /home/d0mie/mosesSMT/mosesdecoder/scripts
 Using single-thread GIZA
 using gzip 
-(1) preparing corpus @ Thu Sep 26 00:16:37 EAT 2019
+(1) preparing corpus @ Sun Oct 13 17:13:58 EAT 2019
 Executing: mkdir -p /home/d0mie/mosesSMT/Baseline/working/train/corpus
-(1.0) selecting factors @ Thu Sep 26 00:16:38 EAT 2019
-(1.1) running mkcls  @ Thu Sep 26 00:16:38 EAT 2019
+(1.0) selecting factors @ Sun Oct 13 17:13:58 EAT 2019
+(1.1) running mkcls  @ Sun Oct 13 17:13:58 EAT 2019
 /home/d0mie/mosesSMT/mosesdecoder/tools/mkcls -c50 -n2 -p/home/d0mie/mosesSMT/Baseline/corpus/training-data.txt.tok.en-sw.clean.en -V/home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb.classes opt
-Executing: /home/d0mie/mosesSMT/mosesdecoder/tools/mkcls -c50 -n2 -p/home/d0mie/mosesSMT/Baseline/corpus/training-data.txt.tok.en-sw.clean.en -V/home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb.classes opt
-
-***** 2 runs. (algorithm:TA)*****
-;KategProblem:cats: 50   words: 15357
-
-start-costs: MEAN: 2.50716e+06 (2.50702e+06-2.50731e+06)  SIGMA:148.152   
-  end-costs: MEAN: 2.33138e+06 (2.32922e+06-2.33355e+06)  SIGMA:2165.1   
-   start-pp: MEAN: 652.351 (651.887-652.815)  SIGMA:0.463983   
-     end-pp: MEAN: 280.544 (277.628-283.46)  SIGMA:2.91593   
- iterations: MEAN: 366492 (359829-373154)  SIGMA:6662.5   
-       time: MEAN: 31.5348 (30.531-32.5386)  SIGMA:1.00382   
-(1.1) running mkcls  @ Thu Sep 26 00:17:42 EAT 2019
+  /home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb.classes already in place, reusing
+(1.1) running mkcls  @ Sun Oct 13 17:13:58 EAT 2019
 /home/d0mie/mosesSMT/mosesdecoder/tools/mkcls -c50 -n2 -p/home/d0mie/mosesSMT/Baseline/corpus/training-data.txt.tok.en-sw.clean.sw -V/home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb.classes opt
-Executing: /home/d0mie/mosesSMT/mosesdecoder/tools/mkcls -c50 -n2 -p/home/d0mie/mosesSMT/Baseline/corpus/training-data.txt.tok.en-sw.clean.sw -V/home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb.classes opt
-
-***** 2 runs. (algorithm:TA)*****
-;KategProblem:cats: 50   words: 15105
-
-start-costs: MEAN: 2.38405e+06 (2.38389e+06-2.38421e+06)  SIGMA:158.691   
-  end-costs: MEAN: 2.22437e+06 (2.22342e+06-2.22532e+06)  SIGMA:952.074   
-   start-pp: MEAN: 537.655 (537.226-538.083)  SIGMA:0.428773   
-     end-pp: MEAN: 240.998 (239.845-242.151)  SIGMA:1.15306   
- iterations: MEAN: 363734 (352410-375058)  SIGMA:11324   
-       time: MEAN: 28.6078 (27.7928-29.4228)  SIGMA:0.815016   
-(1.2) creating vcb file /home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb @ Thu Sep 26 00:18:41 EAT 2019
-(1.2) creating vcb file /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb @ Thu Sep 26 00:18:41 EAT 2019
-(1.3) numberizing corpus /home/d0mie/mosesSMT/Baseline/working/train/corpus/en-sw-int-train.snt @ Thu Sep 26 00:18:42 EAT 2019
-(1.3) numberizing corpus /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw-en-int-train.snt @ Thu Sep 26 00:18:42 EAT 2019
-(2) running giza @ Thu Sep 26 00:18:43 EAT 2019
-(2.1a) running snt2cooc en-sw @ Thu Sep 26 00:18:43 EAT 2019
+  /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb.classes already in place, reusing
+(1.2) creating vcb file /home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb @ Sun Oct 13 17:13:58 EAT 2019
+(1.2) creating vcb file /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb @ Sun Oct 13 17:13:58 EAT 2019
+(1.3) numberizing corpus /home/d0mie/mosesSMT/Baseline/working/train/corpus/en-sw-int-train.snt @ Sun Oct 13 17:13:59 EAT 2019
+  /home/d0mie/mosesSMT/Baseline/working/train/corpus/en-sw-int-train.snt already in place, reusing
+(1.3) numberizing corpus /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw-en-int-train.snt @ Sun Oct 13 17:13:59 EAT 2019
+  /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw-en-int-train.snt already in place, reusing
+(2) running giza @ Sun Oct 13 17:13:59 EAT 2019
+(2.1a) running snt2cooc en-sw @ Sun Oct 13 17:13:59 EAT 2019
 
 Executing: mkdir -p /home/d0mie/mosesSMT/Baseline/working/train/giza.en-sw
 Executing: /home/d0mie/mosesSMT/mosesdecoder/tools/snt2cooc.out /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb /home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb /home/d0mie/mosesSMT/Baseline/working/train/corpus/en-sw-int-train.snt > /home/d0mie/mosesSMT/Baseline/working/train/giza.en-sw/en-sw.cooc
@@ -49,373 +31,10 @@ line 5000
 line 6000
 line 7000
 END.
-(2.1b) running giza en-sw @ Thu Sep 26 00:18:49 EAT 2019
+(2.1b) running giza en-sw @ Sun Oct 13 17:14:05 EAT 2019
 /home/d0mie/mosesSMT/mosesdecoder/tools/GIZA++  -CoocurrenceFile /home/d0mie/mosesSMT/Baseline/working/train/giza.en-sw/en-sw.cooc -c /home/d0mie/mosesSMT/Baseline/working/train/corpus/en-sw-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/d0mie/mosesSMT/Baseline/working/train/giza.en-sw/en-sw -onlyaldumps 1 -p0 0.999 -s /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb -t /home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb
-Executing: /home/d0mie/mosesSMT/mosesdecoder/tools/GIZA++  -CoocurrenceFile /home/d0mie/mosesSMT/Baseline/working/train/giza.en-sw/en-sw.cooc -c /home/d0mie/mosesSMT/Baseline/working/train/corpus/en-sw-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/d0mie/mosesSMT/Baseline/working/train/giza.en-sw/en-sw -onlyaldumps 1 -p0 0.999 -s /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb -t /home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb
-/home/d0mie/mosesSMT/mosesdecoder/tools/GIZA++  -CoocurrenceFile /home/d0mie/mosesSMT/Baseline/working/train/giza.en-sw/en-sw.cooc -c /home/d0mie/mosesSMT/Baseline/working/train/corpus/en-sw-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/d0mie/mosesSMT/Baseline/working/train/giza.en-sw/en-sw -onlyaldumps 1 -p0 0.999 -s /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb -t /home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb
-Parameter 'coocurrencefile' changed from '' to '/home/d0mie/mosesSMT/Baseline/working/train/giza.en-sw/en-sw.cooc'
-Parameter 'c' changed from '' to '/home/d0mie/mosesSMT/Baseline/working/train/corpus/en-sw-int-train.snt'
-Parameter 'm3' changed from '5' to '3'
-Parameter 'm4' changed from '5' to '3'
-Parameter 'model1dumpfrequency' changed from '0' to '1'
-Parameter 'model4smoothfactor' changed from '0.2' to '0.4'
-Parameter 'nodumps' changed from '0' to '1'
-Parameter 'nsmooth' changed from '64' to '4'
-Parameter 'o' changed from '2019-09-26.001849.d0mie' to '/home/d0mie/mosesSMT/Baseline/working/train/giza.en-sw/en-sw'
-Parameter 'onlyaldumps' changed from '0' to '1'
-Parameter 'p0' changed from '-1' to '0.999'
-Parameter 's' changed from '' to '/home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb'
-Parameter 't' changed from '' to '/home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb'
-general parameters:
--------------------
-ml = 101  (maximum sentence length)
-
-No. of iterations:
--------------------
-hmmiterations = 5  (mh)
-model1iterations = 5  (number of iterations for Model 1)
-model2iterations = 0  (number of iterations for Model 2)
-model3iterations = 3  (number of iterations for Model 3)
-model4iterations = 3  (number of iterations for Model 4)
-model5iterations = 0  (number of iterations for Model 5)
-model6iterations = 0  (number of iterations for Model 6)
-
-parameter for various heuristics in GIZA++ for efficient training:
-------------------------------------------------------------------
-countincreasecutoff = 1e-06  (Counts increment cutoff threshold)
-countincreasecutoffal = 1e-05  (Counts increment cutoff threshold for alignments in training of fertility models)
-mincountincrease = 1e-07  (minimal count increase)
-peggedcutoff = 0.03  (relative cutoff probability for alignment-centers in pegging)
-probcutoff = 1e-07  (Probability cutoff threshold for lexicon probabilities)
-probsmooth = 1e-07  (probability smoothing (floor) value )
-
-parameters for describing the type and amount of output:
------------------------------------------------------------
-compactalignmentformat = 0  (0: detailled alignment format, 1: compact alignment format )
-hmmdumpfrequency = 0  (dump frequency of HMM)
-l = 2019-09-26.001849.d0mie.log  (log file name)
-log = 0  (0: no logfile; 1: logfile)
-model1dumpfrequency = 1  (dump frequency of Model 1)
-model2dumpfrequency = 0  (dump frequency of Model 2)
-model345dumpfrequency = 0  (dump frequency of Model 3/4/5)
-nbestalignments = 0  (for printing the n best alignments)
-nodumps = 1  (1: do not write any files)
-o = /home/d0mie/mosesSMT/Baseline/working/train/giza.en-sw/en-sw  (output file prefix)
-onlyaldumps = 1  (1: do not write any files)
-outputpath =   (output path)
-transferdumpfrequency = 0  (output: dump of transfer from Model 2 to 3)
-verbose = 0  (0: not verbose; 1: verbose)
-verbosesentence = -10  (number of sentence for which a lot of information should be printed (negative: no output))
-
-parameters describing input files:
-----------------------------------
-c = /home/d0mie/mosesSMT/Baseline/working/train/corpus/en-sw-int-train.snt  (training corpus file name)
-d =   (dictionary file name)
-s = /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb  (source vocabulary file name)
-t = /home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb  (target vocabulary file name)
-tc =   (test corpus file name)
-
-smoothing parameters:
----------------------
-emalsmooth = 0.2  (f-b-trn: smoothing factor for HMM alignment model (can be ignored by -emSmoothHMM))
-model23smoothfactor = 0  (smoothing parameter for IBM-2/3 (interpolation with constant))
-model4smoothfactor = 0.4  (smooting parameter for alignment probabilities in Model 4)
-model5smoothfactor = 0.1  (smooting parameter for distortion probabilities in Model 5 (linear interpolation with constant))
-nsmooth = 4  (smoothing for fertility parameters (good value: 64): weight for wordlength-dependent fertility parameters)
-nsmoothgeneral = 0  (smoothing for fertility parameters (default: 0): weight for word-independent fertility parameters)
-
-parameters modifying the models:
---------------------------------
-compactadtable = 1  (1: only 3-dimensional alignment table for IBM-2 and IBM-3)
-deficientdistortionforemptyword = 0  (0: IBM-3/IBM-4 as described in (Brown et al. 1993); 1: distortion model of empty word is deficient; 2: distoriton model of empty word is deficient (differently); setting this parameter also helps to avoid that during IBM-3 and IBM-4 training too many words are aligned with the empty word)
-depm4 = 76  (d_{=1}: &1:l, &2:m, &4:F, &8:E, d_{>1}&16:l, &32:m, &64:F, &128:E)
-depm5 = 68  (d_{=1}: &1:l, &2:m, &4:F, &8:E, d_{>1}&16:l, &32:m, &64:F, &128:E)
-emalignmentdependencies = 2  (lextrain: dependencies in the HMM alignment model.  &1: sentence length; &2: previous class; &4: previous position;  &8: French position; &16: French class)
-emprobforempty = 0.4  (f-b-trn: probability for empty word)
-
-parameters modifying the EM-algorithm:
---------------------------------------
-m5p0 = -1  (fixed value for parameter p_0 in IBM-5 (if negative then it is determined in training))
-manlexfactor1 = 0  ()
-manlexfactor2 = 0  ()
-manlexmaxmultiplicity = 20  ()
-maxfertility = 10  (maximal fertility for fertility models)
-p0 = 0.999  (fixed value for parameter p_0 in IBM-3/4 (if negative then it is determined in training))
-pegging = 0  (0: no pegging; 1: do pegging)
-
-general parameters:
--------------------
-ml = 101  (maximum sentence length)
-
-No. of iterations:
--------------------
-hmmiterations = 5  (mh)
-model1iterations = 5  (number of iterations for Model 1)
-model2iterations = 0  (number of iterations for Model 2)
-model3iterations = 3  (number of iterations for Model 3)
-model4iterations = 3  (number of iterations for Model 4)
-model5iterations = 0  (number of iterations for Model 5)
-model6iterations = 0  (number of iterations for Model 6)
-
-parameter for various heuristics in GIZA++ for efficient training:
-------------------------------------------------------------------
-countincreasecutoff = 1e-06  (Counts increment cutoff threshold)
-countincreasecutoffal = 1e-05  (Counts increment cutoff threshold for alignments in training of fertility models)
-mincountincrease = 1e-07  (minimal count increase)
-peggedcutoff = 0.03  (relative cutoff probability for alignment-centers in pegging)
-probcutoff = 1e-07  (Probability cutoff threshold for lexicon probabilities)
-probsmooth = 1e-07  (probability smoothing (floor) value )
-
-parameters for describing the type and amount of output:
------------------------------------------------------------
-compactalignmentformat = 0  (0: detailled alignment format, 1: compact alignment format )
-hmmdumpfrequency = 0  (dump frequency of HMM)
-l = 2019-09-26.001849.d0mie.log  (log file name)
-log = 0  (0: no logfile; 1: logfile)
-model1dumpfrequency = 1  (dump frequency of Model 1)
-model2dumpfrequency = 0  (dump frequency of Model 2)
-model345dumpfrequency = 0  (dump frequency of Model 3/4/5)
-nbestalignments = 0  (for printing the n best alignments)
-nodumps = 1  (1: do not write any files)
-o = /home/d0mie/mosesSMT/Baseline/working/train/giza.en-sw/en-sw  (output file prefix)
-onlyaldumps = 1  (1: do not write any files)
-outputpath =   (output path)
-transferdumpfrequency = 0  (output: dump of transfer from Model 2 to 3)
-verbose = 0  (0: not verbose; 1: verbose)
-verbosesentence = -10  (number of sentence for which a lot of information should be printed (negative: no output))
-
-parameters describing input files:
-----------------------------------
-c = /home/d0mie/mosesSMT/Baseline/working/train/corpus/en-sw-int-train.snt  (training corpus file name)
-d =   (dictionary file name)
-s = /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb  (source vocabulary file name)
-t = /home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb  (target vocabulary file name)
-tc =   (test corpus file name)
-
-smoothing parameters:
----------------------
-emalsmooth = 0.2  (f-b-trn: smoothing factor for HMM alignment model (can be ignored by -emSmoothHMM))
-model23smoothfactor = 0  (smoothing parameter for IBM-2/3 (interpolation with constant))
-model4smoothfactor = 0.4  (smooting parameter for alignment probabilities in Model 4)
-model5smoothfactor = 0.1  (smooting parameter for distortion probabilities in Model 5 (linear interpolation with constant))
-nsmooth = 4  (smoothing for fertility parameters (good value: 64): weight for wordlength-dependent fertility parameters)
-nsmoothgeneral = 0  (smoothing for fertility parameters (default: 0): weight for word-independent fertility parameters)
-
-parameters modifying the models:
---------------------------------
-compactadtable = 1  (1: only 3-dimensional alignment table for IBM-2 and IBM-3)
-deficientdistortionforemptyword = 0  (0: IBM-3/IBM-4 as described in (Brown et al. 1993); 1: distortion model of empty word is deficient; 2: distoriton model of empty word is deficient (differently); setting this parameter also helps to avoid that during IBM-3 and IBM-4 training too many words are aligned with the empty word)
-depm4 = 76  (d_{=1}: &1:l, &2:m, &4:F, &8:E, d_{>1}&16:l, &32:m, &64:F, &128:E)
-depm5 = 68  (d_{=1}: &1:l, &2:m, &4:F, &8:E, d_{>1}&16:l, &32:m, &64:F, &128:E)
-emalignmentdependencies = 2  (lextrain: dependencies in the HMM alignment model.  &1: sentence length; &2: previous class; &4: previous position;  &8: French position; &16: French class)
-emprobforempty = 0.4  (f-b-trn: probability for empty word)
-
-parameters modifying the EM-algorithm:
---------------------------------------
-m5p0 = -1  (fixed value for parameter p_0 in IBM-5 (if negative then it is determined in training))
-manlexfactor1 = 0  ()
-manlexfactor2 = 0  ()
-manlexmaxmultiplicity = 20  ()
-maxfertility = 10  (maximal fertility for fertility models)
-p0 = 0.999  (fixed value for parameter p_0 in IBM-3/4 (if negative then it is determined in training))
-pegging = 0  (0: no pegging; 1: do pegging)
-
-reading vocabulary files 
-Reading vocabulary file from:/home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb
-Reading vocabulary file from:/home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb
-Source vocabulary list has 15106 unique tokens 
-Target vocabulary list has 15358 unique tokens 
-Calculating vocabulary frequencies from corpus /home/d0mie/mosesSMT/Baseline/working/train/corpus/en-sw-int-train.snt
-Reading more sentence pairs into memory ... 
-Corpus fits in memory, corpus has: 7968 sentence pairs.
- Train total # sentence pairs (weighted): 7968
-Size of source portion of the training corpus: 191021 tokens
-Size of the target portion of the training corpus: 200330 tokens 
-In source portion of the training corpus, only 15105 unique tokens appeared
-In target portion of the training corpus, only 15356 unique tokens appeared
-lambda for PP calculation in IBM-1,IBM-2,HMM:= 200330/(198989-7968)== 1.04873
-There are 1856344 1856344 entries in table
-==========================================================
-Model1 Training Started at: Thu Sep 26 00:18:50 2019
-
------------
-Model1: Iteration 1
-Model1: (1) TRAIN CROSS-ENTROPY 14.0622 PERPLEXITY 17105.6
-Model1: (1) VITERBI TRAIN CROSS-ENTROPY inf PERPLEXITY inf
-Model 1 Iteration: 1 took: 3 seconds
------------
-Model1: Iteration 2
-Model1: (2) TRAIN CROSS-ENTROPY 7.17027 PERPLEXITY 144.034
-Model1: (2) VITERBI TRAIN CROSS-ENTROPY 9.64837 PERPLEXITY 802.507
-Model 1 Iteration: 2 took: 3 seconds
------------
-Model1: Iteration 3
-Model1: (3) TRAIN CROSS-ENTROPY 6.33265 PERPLEXITY 80.5967
-Model1: (3) VITERBI TRAIN CROSS-ENTROPY 8.23954 PERPLEXITY 302.237
-Model 1 Iteration: 3 took: 3 seconds
------------
-Model1: Iteration 4
-Model1: (4) TRAIN CROSS-ENTROPY 5.95186 PERPLEXITY 61.8996
-Model1: (4) VITERBI TRAIN CROSS-ENTROPY 7.48243 PERPLEXITY 178.828
-Model 1 Iteration: 4 took: 3 seconds
------------
-Model1: Iteration 5
-Model1: (5) TRAIN CROSS-ENTROPY 5.80705 PERPLEXITY 55.9881
-Model1: (5) VITERBI TRAIN CROSS-ENTROPY 7.12771 PERPLEXITY 139.847
-Model 1 Iteration: 5 took: 3 seconds
-Entire Model1 Training took: 15 seconds
-NOTE: I am doing iterations with the HMM model!
-Read classes: #words: 15105  #classes: 51
-Read classes: #words: 15357  #classes: 51
-
-==========================================================
-Hmm Training Started at: Thu Sep 26 00:19:05 2019
-
------------
-Hmm: Iteration 1
-A/D table contains 187422 parameters.
-Hmm: (1) TRAIN CROSS-ENTROPY 5.68149 PERPLEXITY 51.3214
-Hmm: (1) VITERBI TRAIN CROSS-ENTROPY 6.9349 PERPLEXITY 122.353
-
-Hmm Iteration: 1 took: 27 seconds
-
------------
-Hmm: Iteration 2
-A/D table contains 187422 parameters.
-Hmm: (2) TRAIN CROSS-ENTROPY 5.24097 PERPLEXITY 37.8172
-Hmm: (2) VITERBI TRAIN CROSS-ENTROPY 5.73932 PERPLEXITY 53.4205
-
-Hmm Iteration: 2 took: 27 seconds
-
------------
-Hmm: Iteration 3
-A/D table contains 187422 parameters.
-Hmm: (3) TRAIN CROSS-ENTROPY 4.57873 PERPLEXITY 23.8965
-Hmm: (3) VITERBI TRAIN CROSS-ENTROPY 4.84497 PERPLEXITY 28.7397
-
-Hmm Iteration: 3 took: 27 seconds
-
------------
-Hmm: Iteration 4
-A/D table contains 187422 parameters.
-Hmm: (4) TRAIN CROSS-ENTROPY 4.24735 PERPLEXITY 18.9924
-Hmm: (4) VITERBI TRAIN CROSS-ENTROPY 4.43277 PERPLEXITY 21.5971
-
-Hmm Iteration: 4 took: 26 seconds
-
------------
-Hmm: Iteration 5
-A/D table contains 187422 parameters.
-Hmm: (5) TRAIN CROSS-ENTROPY 4.11381 PERPLEXITY 17.3133
-Hmm: (5) VITERBI TRAIN CROSS-ENTROPY 4.26414 PERPLEXITY 19.2147
-
-Hmm Iteration: 5 took: 26 seconds
-
-Entire Hmm Training took: 133 seconds
-==========================================================
-Read classes: #words: 15105  #classes: 51
-Read classes: #words: 15357  #classes: 51
-Read classes: #words: 15105  #classes: 51
-Read classes: #words: 15357  #classes: 51
-
-==========================================================
-Starting H333444:  Viterbi Training
- H333444 Training Started at: Thu Sep 26 00:21:19 2019
-
-
----------------------
-THTo3: Iteration 1
-#centers(pre/hillclimbed/real): 1 1 1  #al: 1122.27 #alsophisticatedcountcollection: 0 #hcsteps: 0
-#peggingImprovements: 0
-A/D table contains 187422 parameters.
-A/D table contains 192874 parameters.
-NTable contains 151060 parameter.
-p0_count is 163294 and p1 is 18517.9; p0 is 0.999 p1: 0.001
-THTo3: TRAIN CROSS-ENTROPY 3.96838 PERPLEXITY 15.6531
-THTo3: (1) TRAIN VITERBI CROSS-ENTROPY 4.03909 PERPLEXITY 16.4394
-
-THTo3 Viterbi Iteration : 1 took: 22 seconds
-
----------------------
-Model3: Iteration 2
-#centers(pre/hillclimbed/real): 1 1 1  #al: 1125.46 #alsophisticatedcountcollection: 0 #hcsteps: 3.49623
-#peggingImprovements: 0
-A/D table contains 187422 parameters.
-A/D table contains 192796 parameters.
-NTable contains 151060 parameter.
-p0_count is 183178 and p1 is 8576.14; p0 is 0.999 p1: 0.001
-Model3: TRAIN CROSS-ENTROPY 5.29855 PERPLEXITY 39.357
-Model3: (2) TRAIN VITERBI CROSS-ENTROPY 5.37327 PERPLEXITY 41.4491
-
-Model3 Viterbi Iteration : 2 took: 18 seconds
-
----------------------
-Model3: Iteration 3
-#centers(pre/hillclimbed/real): 1 1 1  #al: 1125.81 #alsophisticatedcountcollection: 0 #hcsteps: 3.47854
-#peggingImprovements: 0
-A/D table contains 187422 parameters.
-A/D table contains 192564 parameters.
-NTable contains 151060 parameter.
-p0_count is 187980 and p1 is 6175.23; p0 is 0.999 p1: 0.001
-Model3: TRAIN CROSS-ENTROPY 5.13571 PERPLEXITY 35.1562
-Model3: (3) TRAIN VITERBI CROSS-ENTROPY 5.19812 PERPLEXITY 36.7105
-
-Model3 Viterbi Iteration : 3 took: 18 seconds
-
----------------------
-T3To4: Iteration 4
-#centers(pre/hillclimbed/real): 1 1 1  #al: 1125.93 #alsophisticatedcountcollection: 32.6786 #hcsteps: 3.42595
-#peggingImprovements: 0
-D4 table contains 524552 parameters.
-A/D table contains 187422 parameters.
-A/D table contains 192564 parameters.
-NTable contains 151060 parameter.
-p0_count is 189412 and p1 is 5458.95; p0 is 0.999 p1: 0.001
-T3To4: TRAIN CROSS-ENTROPY 5.09013 PERPLEXITY 34.063
-T3To4: (4) TRAIN VITERBI CROSS-ENTROPY 5.14829 PERPLEXITY 35.4643
-
-T3To4 Viterbi Iteration : 4 took: 20 seconds
-
----------------------
-Model4: Iteration 5
-#centers(pre/hillclimbed/real): 1 1 1  #al: 1125.84 #alsophisticatedcountcollection: 33.4135 #hcsteps: 2.90311
-#peggingImprovements: 0
-D4 table contains 524552 parameters.
-A/D table contains 187422 parameters.
-A/D table contains 193575 parameters.
-NTable contains 151060 parameter.
-p0_count is 186304 and p1 is 7013.16; p0 is 0.999 p1: 0.001
-Model4: TRAIN CROSS-ENTROPY 4.64603 PERPLEXITY 25.0377
-Model4: (5) TRAIN VITERBI CROSS-ENTROPY 4.68861 PERPLEXITY 25.7877
-
-Model4 Viterbi Iteration : 5 took: 55 seconds
-
----------------------
-Model4: Iteration 6
-#centers(pre/hillclimbed/real): 1 1 1  #al: 1125.87 #alsophisticatedcountcollection: 29.0801 #hcsteps: 2.84061
-#peggingImprovements: 0
-D4 table contains 524552 parameters.
-A/D table contains 187422 parameters.
-A/D table contains 193419 parameters.
-NTable contains 151060 parameter.
-p0_count is 186503 and p1 is 6913.66; p0 is 0.999 p1: 0.001
-Model4: TRAIN CROSS-ENTROPY 4.49742 PERPLEXITY 22.587
-Model4: (6) TRAIN VITERBI CROSS-ENTROPY 4.533 PERPLEXITY 23.151
-
-Model4 Viterbi Iteration : 6 took: 53 seconds
-H333444 Training Finished at: Thu Sep 26 00:24:25 2019
-
-
-Entire Viterbi H333444 Training took: 186 seconds
-==========================================================
-
-Entire Training took: 336 seconds
-Program Finished at: Thu Sep 26 00:24:25 2019
-
-==========================================================
-Executing: rm -f /home/d0mie/mosesSMT/Baseline/working/train/giza.en-sw/en-sw.A3.final.gz
-Executing: gzip /home/d0mie/mosesSMT/Baseline/working/train/giza.en-sw/en-sw.A3.final
-(2.1a) running snt2cooc sw-en @ Thu Sep 26 00:24:26 EAT 2019
+  /home/d0mie/mosesSMT/Baseline/working/train/giza.en-sw/en-sw.A3.final.gz seems finished, reusing.
+(2.1a) running snt2cooc sw-en @ Sun Oct 13 17:14:05 EAT 2019
 
 Executing: mkdir -p /home/d0mie/mosesSMT/Baseline/working/train/giza.sw-en
 Executing: /home/d0mie/mosesSMT/mosesdecoder/tools/snt2cooc.out /home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw-en-int-train.snt > /home/d0mie/mosesSMT/Baseline/working/train/giza.sw-en/sw-en.cooc
@@ -428,373 +47,10 @@ line 5000
 line 6000
 line 7000
 END.
-(2.1b) running giza sw-en @ Thu Sep 26 00:24:31 EAT 2019
+(2.1b) running giza sw-en @ Sun Oct 13 17:14:11 EAT 2019
 /home/d0mie/mosesSMT/mosesdecoder/tools/GIZA++  -CoocurrenceFile /home/d0mie/mosesSMT/Baseline/working/train/giza.sw-en/sw-en.cooc -c /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw-en-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/d0mie/mosesSMT/Baseline/working/train/giza.sw-en/sw-en -onlyaldumps 1 -p0 0.999 -s /home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb -t /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb
-Executing: /home/d0mie/mosesSMT/mosesdecoder/tools/GIZA++  -CoocurrenceFile /home/d0mie/mosesSMT/Baseline/working/train/giza.sw-en/sw-en.cooc -c /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw-en-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/d0mie/mosesSMT/Baseline/working/train/giza.sw-en/sw-en -onlyaldumps 1 -p0 0.999 -s /home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb -t /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb
-/home/d0mie/mosesSMT/mosesdecoder/tools/GIZA++  -CoocurrenceFile /home/d0mie/mosesSMT/Baseline/working/train/giza.sw-en/sw-en.cooc -c /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw-en-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/d0mie/mosesSMT/Baseline/working/train/giza.sw-en/sw-en -onlyaldumps 1 -p0 0.999 -s /home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb -t /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb
-Parameter 'coocurrencefile' changed from '' to '/home/d0mie/mosesSMT/Baseline/working/train/giza.sw-en/sw-en.cooc'
-Parameter 'c' changed from '' to '/home/d0mie/mosesSMT/Baseline/working/train/corpus/sw-en-int-train.snt'
-Parameter 'm3' changed from '5' to '3'
-Parameter 'm4' changed from '5' to '3'
-Parameter 'model1dumpfrequency' changed from '0' to '1'
-Parameter 'model4smoothfactor' changed from '0.2' to '0.4'
-Parameter 'nodumps' changed from '0' to '1'
-Parameter 'nsmooth' changed from '64' to '4'
-Parameter 'o' changed from '2019-09-26.002431.d0mie' to '/home/d0mie/mosesSMT/Baseline/working/train/giza.sw-en/sw-en'
-Parameter 'onlyaldumps' changed from '0' to '1'
-Parameter 'p0' changed from '-1' to '0.999'
-Parameter 's' changed from '' to '/home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb'
-Parameter 't' changed from '' to '/home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb'
-general parameters:
--------------------
-ml = 101  (maximum sentence length)
-
-No. of iterations:
--------------------
-hmmiterations = 5  (mh)
-model1iterations = 5  (number of iterations for Model 1)
-model2iterations = 0  (number of iterations for Model 2)
-model3iterations = 3  (number of iterations for Model 3)
-model4iterations = 3  (number of iterations for Model 4)
-model5iterations = 0  (number of iterations for Model 5)
-model6iterations = 0  (number of iterations for Model 6)
-
-parameter for various heuristics in GIZA++ for efficient training:
-------------------------------------------------------------------
-countincreasecutoff = 1e-06  (Counts increment cutoff threshold)
-countincreasecutoffal = 1e-05  (Counts increment cutoff threshold for alignments in training of fertility models)
-mincountincrease = 1e-07  (minimal count increase)
-peggedcutoff = 0.03  (relative cutoff probability for alignment-centers in pegging)
-probcutoff = 1e-07  (Probability cutoff threshold for lexicon probabilities)
-probsmooth = 1e-07  (probability smoothing (floor) value )
-
-parameters for describing the type and amount of output:
------------------------------------------------------------
-compactalignmentformat = 0  (0: detailled alignment format, 1: compact alignment format )
-hmmdumpfrequency = 0  (dump frequency of HMM)
-l = 2019-09-26.002431.d0mie.log  (log file name)
-log = 0  (0: no logfile; 1: logfile)
-model1dumpfrequency = 1  (dump frequency of Model 1)
-model2dumpfrequency = 0  (dump frequency of Model 2)
-model345dumpfrequency = 0  (dump frequency of Model 3/4/5)
-nbestalignments = 0  (for printing the n best alignments)
-nodumps = 1  (1: do not write any files)
-o = /home/d0mie/mosesSMT/Baseline/working/train/giza.sw-en/sw-en  (output file prefix)
-onlyaldumps = 1  (1: do not write any files)
-outputpath =   (output path)
-transferdumpfrequency = 0  (output: dump of transfer from Model 2 to 3)
-verbose = 0  (0: not verbose; 1: verbose)
-verbosesentence = -10  (number of sentence for which a lot of information should be printed (negative: no output))
-
-parameters describing input files:
-----------------------------------
-c = /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw-en-int-train.snt  (training corpus file name)
-d =   (dictionary file name)
-s = /home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb  (source vocabulary file name)
-t = /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb  (target vocabulary file name)
-tc =   (test corpus file name)
-
-smoothing parameters:
----------------------
-emalsmooth = 0.2  (f-b-trn: smoothing factor for HMM alignment model (can be ignored by -emSmoothHMM))
-model23smoothfactor = 0  (smoothing parameter for IBM-2/3 (interpolation with constant))
-model4smoothfactor = 0.4  (smooting parameter for alignment probabilities in Model 4)
-model5smoothfactor = 0.1  (smooting parameter for distortion probabilities in Model 5 (linear interpolation with constant))
-nsmooth = 4  (smoothing for fertility parameters (good value: 64): weight for wordlength-dependent fertility parameters)
-nsmoothgeneral = 0  (smoothing for fertility parameters (default: 0): weight for word-independent fertility parameters)
-
-parameters modifying the models:
---------------------------------
-compactadtable = 1  (1: only 3-dimensional alignment table for IBM-2 and IBM-3)
-deficientdistortionforemptyword = 0  (0: IBM-3/IBM-4 as described in (Brown et al. 1993); 1: distortion model of empty word is deficient; 2: distoriton model of empty word is deficient (differently); setting this parameter also helps to avoid that during IBM-3 and IBM-4 training too many words are aligned with the empty word)
-depm4 = 76  (d_{=1}: &1:l, &2:m, &4:F, &8:E, d_{>1}&16:l, &32:m, &64:F, &128:E)
-depm5 = 68  (d_{=1}: &1:l, &2:m, &4:F, &8:E, d_{>1}&16:l, &32:m, &64:F, &128:E)
-emalignmentdependencies = 2  (lextrain: dependencies in the HMM alignment model.  &1: sentence length; &2: previous class; &4: previous position;  &8: French position; &16: French class)
-emprobforempty = 0.4  (f-b-trn: probability for empty word)
-
-parameters modifying the EM-algorithm:
---------------------------------------
-m5p0 = -1  (fixed value for parameter p_0 in IBM-5 (if negative then it is determined in training))
-manlexfactor1 = 0  ()
-manlexfactor2 = 0  ()
-manlexmaxmultiplicity = 20  ()
-maxfertility = 10  (maximal fertility for fertility models)
-p0 = 0.999  (fixed value for parameter p_0 in IBM-3/4 (if negative then it is determined in training))
-pegging = 0  (0: no pegging; 1: do pegging)
-
-general parameters:
--------------------
-ml = 101  (maximum sentence length)
-
-No. of iterations:
--------------------
-hmmiterations = 5  (mh)
-model1iterations = 5  (number of iterations for Model 1)
-model2iterations = 0  (number of iterations for Model 2)
-model3iterations = 3  (number of iterations for Model 3)
-model4iterations = 3  (number of iterations for Model 4)
-model5iterations = 0  (number of iterations for Model 5)
-model6iterations = 0  (number of iterations for Model 6)
-
-parameter for various heuristics in GIZA++ for efficient training:
-------------------------------------------------------------------
-countincreasecutoff = 1e-06  (Counts increment cutoff threshold)
-countincreasecutoffal = 1e-05  (Counts increment cutoff threshold for alignments in training of fertility models)
-mincountincrease = 1e-07  (minimal count increase)
-peggedcutoff = 0.03  (relative cutoff probability for alignment-centers in pegging)
-probcutoff = 1e-07  (Probability cutoff threshold for lexicon probabilities)
-probsmooth = 1e-07  (probability smoothing (floor) value )
-
-parameters for describing the type and amount of output:
------------------------------------------------------------
-compactalignmentformat = 0  (0: detailled alignment format, 1: compact alignment format )
-hmmdumpfrequency = 0  (dump frequency of HMM)
-l = 2019-09-26.002431.d0mie.log  (log file name)
-log = 0  (0: no logfile; 1: logfile)
-model1dumpfrequency = 1  (dump frequency of Model 1)
-model2dumpfrequency = 0  (dump frequency of Model 2)
-model345dumpfrequency = 0  (dump frequency of Model 3/4/5)
-nbestalignments = 0  (for printing the n best alignments)
-nodumps = 1  (1: do not write any files)
-o = /home/d0mie/mosesSMT/Baseline/working/train/giza.sw-en/sw-en  (output file prefix)
-onlyaldumps = 1  (1: do not write any files)
-outputpath =   (output path)
-transferdumpfrequency = 0  (output: dump of transfer from Model 2 to 3)
-verbose = 0  (0: not verbose; 1: verbose)
-verbosesentence = -10  (number of sentence for which a lot of information should be printed (negative: no output))
-
-parameters describing input files:
-----------------------------------
-c = /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw-en-int-train.snt  (training corpus file name)
-d =   (dictionary file name)
-s = /home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb  (source vocabulary file name)
-t = /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb  (target vocabulary file name)
-tc =   (test corpus file name)
-
-smoothing parameters:
----------------------
-emalsmooth = 0.2  (f-b-trn: smoothing factor for HMM alignment model (can be ignored by -emSmoothHMM))
-model23smoothfactor = 0  (smoothing parameter for IBM-2/3 (interpolation with constant))
-model4smoothfactor = 0.4  (smooting parameter for alignment probabilities in Model 4)
-model5smoothfactor = 0.1  (smooting parameter for distortion probabilities in Model 5 (linear interpolation with constant))
-nsmooth = 4  (smoothing for fertility parameters (good value: 64): weight for wordlength-dependent fertility parameters)
-nsmoothgeneral = 0  (smoothing for fertility parameters (default: 0): weight for word-independent fertility parameters)
-
-parameters modifying the models:
---------------------------------
-compactadtable = 1  (1: only 3-dimensional alignment table for IBM-2 and IBM-3)
-deficientdistortionforemptyword = 0  (0: IBM-3/IBM-4 as described in (Brown et al. 1993); 1: distortion model of empty word is deficient; 2: distoriton model of empty word is deficient (differently); setting this parameter also helps to avoid that during IBM-3 and IBM-4 training too many words are aligned with the empty word)
-depm4 = 76  (d_{=1}: &1:l, &2:m, &4:F, &8:E, d_{>1}&16:l, &32:m, &64:F, &128:E)
-depm5 = 68  (d_{=1}: &1:l, &2:m, &4:F, &8:E, d_{>1}&16:l, &32:m, &64:F, &128:E)
-emalignmentdependencies = 2  (lextrain: dependencies in the HMM alignment model.  &1: sentence length; &2: previous class; &4: previous position;  &8: French position; &16: French class)
-emprobforempty = 0.4  (f-b-trn: probability for empty word)
-
-parameters modifying the EM-algorithm:
---------------------------------------
-m5p0 = -1  (fixed value for parameter p_0 in IBM-5 (if negative then it is determined in training))
-manlexfactor1 = 0  ()
-manlexfactor2 = 0  ()
-manlexmaxmultiplicity = 20  ()
-maxfertility = 10  (maximal fertility for fertility models)
-p0 = 0.999  (fixed value for parameter p_0 in IBM-3/4 (if negative then it is determined in training))
-pegging = 0  (0: no pegging; 1: do pegging)
-
-reading vocabulary files 
-Reading vocabulary file from:/home/d0mie/mosesSMT/Baseline/working/train/corpus/en.vcb
-Reading vocabulary file from:/home/d0mie/mosesSMT/Baseline/working/train/corpus/sw.vcb
-Source vocabulary list has 15358 unique tokens 
-Target vocabulary list has 15106 unique tokens 
-Calculating vocabulary frequencies from corpus /home/d0mie/mosesSMT/Baseline/working/train/corpus/sw-en-int-train.snt
-Reading more sentence pairs into memory ... 
-Corpus fits in memory, corpus has: 7968 sentence pairs.
- Train total # sentence pairs (weighted): 7968
-Size of source portion of the training corpus: 200330 tokens
-Size of the target portion of the training corpus: 191021 tokens 
-In source portion of the training corpus, only 15357 unique tokens appeared
-In target portion of the training corpus, only 15104 unique tokens appeared
-lambda for PP calculation in IBM-1,IBM-2,HMM:= 191021/(208298-7968)== 0.953532
-There are 1856092 1856092 entries in table
-==========================================================
-Model1 Training Started at: Thu Sep 26 00:24:33 2019
-
------------
-Model1: Iteration 1
-Model1: (1) TRAIN CROSS-ENTROPY 14.0557 PERPLEXITY 17029.1
-Model1: (1) VITERBI TRAIN CROSS-ENTROPY inf PERPLEXITY inf
-Model 1 Iteration: 1 took: 3 seconds
------------
-Model1: Iteration 2
-Model1: (2) TRAIN CROSS-ENTROPY 7.01157 PERPLEXITY 129.031
-Model1: (2) VITERBI TRAIN CROSS-ENTROPY 9.58373 PERPLEXITY 767.343
-Model 1 Iteration: 2 took: 2 seconds
------------
-Model1: Iteration 3
-Model1: (3) TRAIN CROSS-ENTROPY 6.10712 PERPLEXITY 68.9328
-Model1: (3) VITERBI TRAIN CROSS-ENTROPY 7.94536 PERPLEXITY 246.486
-Model 1 Iteration: 3 took: 3 seconds
------------
-Model1: Iteration 4
-Model1: (4) TRAIN CROSS-ENTROPY 5.67162 PERPLEXITY 50.9714
-Model1: (4) VITERBI TRAIN CROSS-ENTROPY 7.11759 PERPLEXITY 138.87
-Model 1 Iteration: 4 took: 3 seconds
------------
-Model1: Iteration 5
-Model1: (5) TRAIN CROSS-ENTROPY 5.51014 PERPLEXITY 45.5741
-Model1: (5) VITERBI TRAIN CROSS-ENTROPY 6.75444 PERPLEXITY 107.966
-Model 1 Iteration: 5 took: 3 seconds
-Entire Model1 Training took: 14 seconds
-NOTE: I am doing iterations with the HMM model!
-Read classes: #words: 15357  #classes: 51
-Read classes: #words: 15105  #classes: 51
-
-==========================================================
-Hmm Training Started at: Thu Sep 26 00:24:47 2019
-
------------
-Hmm: Iteration 1
-A/D table contains 194872 parameters.
-Hmm: (1) TRAIN CROSS-ENTROPY 5.38437 PERPLEXITY 41.7694
-Hmm: (1) VITERBI TRAIN CROSS-ENTROPY 6.56903 PERPLEXITY 94.9455
-
-Hmm Iteration: 1 took: 27 seconds
-
------------
-Hmm: Iteration 2
-A/D table contains 194872 parameters.
-Hmm: (2) TRAIN CROSS-ENTROPY 4.8814 PERPLEXITY 29.4746
-Hmm: (2) VITERBI TRAIN CROSS-ENTROPY 5.31954 PERPLEXITY 39.9339
-
-Hmm Iteration: 2 took: 28 seconds
-
------------
-Hmm: Iteration 3
-A/D table contains 194872 parameters.
-Hmm: (3) TRAIN CROSS-ENTROPY 4.17936 PERPLEXITY 18.1181
-Hmm: (3) VITERBI TRAIN CROSS-ENTROPY 4.40364 PERPLEXITY 21.1655
-
-Hmm Iteration: 3 took: 27 seconds
-
------------
-Hmm: Iteration 4
-A/D table contains 194872 parameters.
-Hmm: (4) TRAIN CROSS-ENTROPY 3.85441 PERPLEXITY 14.4641
-Hmm: (4) VITERBI TRAIN CROSS-ENTROPY 4.01308 PERPLEXITY 16.1457
-
-Hmm Iteration: 4 took: 27 seconds
-
------------
-Hmm: Iteration 5
-A/D table contains 194872 parameters.
-Hmm: (5) TRAIN CROSS-ENTROPY 3.73258 PERPLEXITY 13.2928
-Hmm: (5) VITERBI TRAIN CROSS-ENTROPY 3.86577 PERPLEXITY 14.5785
-
-Hmm Iteration: 5 took: 27 seconds
-
-Entire Hmm Training took: 136 seconds
-==========================================================
-Read classes: #words: 15357  #classes: 51
-Read classes: #words: 15105  #classes: 51
-Read classes: #words: 15357  #classes: 51
-Read classes: #words: 15105  #classes: 51
-
-==========================================================
-Starting H333444:  Viterbi Training
- H333444 Training Started at: Thu Sep 26 00:27:04 2019
-
-
----------------------
-THTo3: Iteration 1
-#centers(pre/hillclimbed/real): 1 1 1  #al: 1098.14 #alsophisticatedcountcollection: 0 #hcsteps: 0
-#peggingImprovements: 0
-A/D table contains 194872 parameters.
-A/D table contains 184764 parameters.
-NTable contains 153580 parameter.
-p0_count is 156327 and p1 is 17346.9; p0 is 0.999 p1: 0.001
-THTo3: TRAIN CROSS-ENTROPY 3.56131 PERPLEXITY 11.8049
-THTo3: (1) TRAIN VITERBI CROSS-ENTROPY 3.62791 PERPLEXITY 12.3626
-
-THTo3 Viterbi Iteration : 1 took: 22 seconds
-
----------------------
-Model3: Iteration 2
-#centers(pre/hillclimbed/real): 1 1 1  #al: 1100.57 #alsophisticatedcountcollection: 0 #hcsteps: 3.01293
-#peggingImprovements: 0
-A/D table contains 194872 parameters.
-A/D table contains 184613 parameters.
-NTable contains 153580 parameter.
-p0_count is 172327 and p1 is 9346.83; p0 is 0.999 p1: 0.001
-Model3: TRAIN CROSS-ENTROPY 4.79225 PERPLEXITY 27.7083
-Model3: (2) TRAIN VITERBI CROSS-ENTROPY 4.86037 PERPLEXITY 29.0481
-
-Model3 Viterbi Iteration : 2 took: 18 seconds
-
----------------------
-Model3: Iteration 3
-#centers(pre/hillclimbed/real): 1 1 1  #al: 1100.93 #alsophisticatedcountcollection: 0 #hcsteps: 3.04681
-#peggingImprovements: 0
-A/D table contains 194872 parameters.
-A/D table contains 184541 parameters.
-NTable contains 153580 parameter.
-p0_count is 177550 and p1 is 6735.71; p0 is 0.999 p1: 0.001
-Model3: TRAIN CROSS-ENTROPY 4.65374 PERPLEXITY 25.1718
-Model3: (3) TRAIN VITERBI CROSS-ENTROPY 4.71144 PERPLEXITY 26.199
-
-Model3 Viterbi Iteration : 3 took: 18 seconds
-
----------------------
-T3To4: Iteration 4
-#centers(pre/hillclimbed/real): 1 1 1  #al: 1101.05 #alsophisticatedcountcollection: 26.376 #hcsteps: 3.0881
-#peggingImprovements: 0
-D4 table contains 524958 parameters.
-A/D table contains 194872 parameters.
-A/D table contains 184464 parameters.
-NTable contains 153580 parameter.
-p0_count is 179589 and p1 is 5716.16; p0 is 0.999 p1: 0.001
-T3To4: TRAIN CROSS-ENTROPY 4.61097 PERPLEXITY 24.4366
-T3To4: (4) TRAIN VITERBI CROSS-ENTROPY 4.66441 PERPLEXITY 25.3587
-
-T3To4 Viterbi Iteration : 4 took: 19 seconds
-
----------------------
-Model4: Iteration 5
-#centers(pre/hillclimbed/real): 1 1 1  #al: 1100.93 #alsophisticatedcountcollection: 28.5766 #hcsteps: 2.65575
-#peggingImprovements: 0
-D4 table contains 524958 parameters.
-A/D table contains 194872 parameters.
-A/D table contains 185187 parameters.
-NTable contains 153580 parameter.
-p0_count is 177490 and p1 is 6765.53; p0 is 0.999 p1: 0.001
-Model4: TRAIN CROSS-ENTROPY 4.14995 PERPLEXITY 17.7525
-Model4: (5) TRAIN VITERBI CROSS-ENTROPY 4.18707 PERPLEXITY 18.2152
-
-Model4 Viterbi Iteration : 5 took: 49 seconds
-
----------------------
-Model4: Iteration 6
-#centers(pre/hillclimbed/real): 1 1 1  #al: 1100.92 #alsophisticatedcountcollection: 24.5006 #hcsteps: 2.63278
-#peggingImprovements: 0
-D4 table contains 524958 parameters.
-A/D table contains 194872 parameters.
-A/D table contains 185308 parameters.
-NTable contains 153580 parameter.
-p0_count is 177726 and p1 is 6647.41; p0 is 0.999 p1: 0.001
-Model4: TRAIN CROSS-ENTROPY 4.01399 PERPLEXITY 16.1559
-Model4: (6) TRAIN VITERBI CROSS-ENTROPY 4.04417 PERPLEXITY 16.4974
-
-Model4 Viterbi Iteration : 6 took: 49 seconds
-H333444 Training Finished at: Thu Sep 26 00:29:59 2019
-
-
-Entire Viterbi H333444 Training took: 175 seconds
-==========================================================
-
-Entire Training took: 328 seconds
-Program Finished at: Thu Sep 26 00:29:59 2019
-
-==========================================================
-Executing: rm -f /home/d0mie/mosesSMT/Baseline/working/train/giza.sw-en/sw-en.A3.final.gz
-Executing: gzip /home/d0mie/mosesSMT/Baseline/working/train/giza.sw-en/sw-en.A3.final
-(3) generate word alignment @ Thu Sep 26 00:30:00 EAT 2019
+  /home/d0mie/mosesSMT/Baseline/working/train/giza.sw-en/sw-en.A3.final.gz seems finished, reusing.
+(3) generate word alignment @ Sun Oct 13 17:14:11 EAT 2019
 Combining forward and inverted alignment from files:
   /home/d0mie/mosesSMT/Baseline/working/train/giza.en-sw/en-sw.A3.final.{bz2,gz}
   /home/d0mie/mosesSMT/Baseline/working/train/giza.sw-en/sw-en.A3.final.{bz2,gz}
@@ -802,56 +58,52 @@ Executing: mkdir -p /home/d0mie/mosesSMT/Baseline/working/train/model
 Executing: /home/d0mie/mosesSMT/mosesdecoder/scripts/training/giza2bal.pl -d "gzip -cd /home/d0mie/mosesSMT/Baseline/working/train/giza.sw-en/sw-en.A3.final.gz" -i "gzip -cd /home/d0mie/mosesSMT/Baseline/working/train/giza.en-sw/en-sw.A3.final.gz" |/home/d0mie/mosesSMT/mosesdecoder/scripts/../bin/symal -alignment="grow" -diagonal="yes" -final="yes" -both="yes" > /home/d0mie/mosesSMT/Baseline/working/train/model/aligned.grow-diag-final-and
 symal: computing grow alignment: diagonal (1) final (1)both-uncovered (1)
 skip=<0> counts=<7968>
-(4) generate lexical translation table 0-0 @ Thu Sep 26 00:30:07 EAT 2019
+(4) generate lexical translation table 0-0 @ Sun Oct 13 17:14:18 EAT 2019
 (/home/d0mie/mosesSMT/Baseline/corpus/training-data.txt.tok.en-sw.clean.en,/home/d0mie/mosesSMT/Baseline/corpus/training-data.txt.tok.en-sw.clean.sw,/home/d0mie/mosesSMT/Baseline/working/train/model/lex)
-!!!!!!!!
-Saved: /home/d0mie/mosesSMT/Baseline/working/train/model/lex.f2e and /home/d0mie/mosesSMT/Baseline/working/train/model/lex.e2f
-FILE: /home/d0mie/mosesSMT/Baseline/corpus/training-data.txt.tok.en-sw.clean.sw
-FILE: /home/d0mie/mosesSMT/Baseline/corpus/training-data.txt.tok.en-sw.clean.en
-FILE: /home/d0mie/mosesSMT/Baseline/working/train/model/aligned.grow-diag-final-and
-(5) extract phrases @ Thu Sep 26 00:30:11 EAT 2019
+  reusing: /home/d0mie/mosesSMT/Baseline/working/train/model/lex.f2e and /home/d0mie/mosesSMT/Baseline/working/train/model/lex.e2f
+(5) extract phrases @ Sun Oct 13 17:14:18 EAT 2019
 /home/d0mie/mosesSMT/mosesdecoder/scripts/generic/extract-parallel.perl 4 split "sort    " /home/d0mie/mosesSMT/mosesdecoder/scripts/../bin/extract /home/d0mie/mosesSMT/Baseline/corpus/training-data.txt.tok.en-sw.clean.sw /home/d0mie/mosesSMT/Baseline/corpus/training-data.txt.tok.en-sw.clean.en /home/d0mie/mosesSMT/Baseline/working/train/model/aligned.grow-diag-final-and /home/d0mie/mosesSMT/Baseline/working/train/model/extract 7 orientation --model wbe-msd --GZOutput 
 Executing: /home/d0mie/mosesSMT/mosesdecoder/scripts/generic/extract-parallel.perl 4 split "sort    " /home/d0mie/mosesSMT/mosesdecoder/scripts/../bin/extract /home/d0mie/mosesSMT/Baseline/corpus/training-data.txt.tok.en-sw.clean.sw /home/d0mie/mosesSMT/Baseline/corpus/training-data.txt.tok.en-sw.clean.en /home/d0mie/mosesSMT/Baseline/working/train/model/aligned.grow-diag-final-and /home/d0mie/mosesSMT/Baseline/working/train/model/extract 7 orientation --model wbe-msd --GZOutput 
 MAX 7 1 0
-Started Thu Sep 26 00:30:11 2019
+Started Sun Oct 13 17:14:18 2019
 using gzip 
 isBSDSplit=0 
-Executing: mkdir -p /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719; ls -l /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719 
+Executing: mkdir -p /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291; ls -l /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291 
 total=7968 line-per-split=1993 
-split -d -l 1993 -a 7 /home/d0mie/mosesSMT/Baseline/corpus/training-data.txt.tok.en-sw.clean.en /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719/source.split -d -l 1993 -a 7 /home/d0mie/mosesSMT/Baseline/working/train/model/aligned.grow-diag-final-and /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719/align.split -d -l 1993 -a 7 /home/d0mie/mosesSMT/Baseline/corpus/training-data.txt.tok.en-sw.clean.sw /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719/target.merging extract / extract.inv
-gunzip -c /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719/extract.0000000.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719/extract.0000001.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719/extract.0000002.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719/extract.0000003.gz  | LC_ALL=C sort     -T /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719 2>> /dev/stderr | gzip -c > /home/d0mie/mosesSMT/Baseline/working/train/model/extract.sorted.gz 2>> /dev/stderr 
-gunzip -c /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719/extract.0000000.inv.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719/extract.0000001.inv.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719/extract.0000002.inv.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719/extract.0000003.inv.gz  | LC_ALL=C sort     -T /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719 2>> /dev/stderr | gzip -c > /home/d0mie/mosesSMT/Baseline/working/train/model/extract.inv.sorted.gz 2>> /dev/stderr 
-gunzip -c /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719/extract.0000000.o.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719/extract.0000001.o.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719/extract.0000002.o.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719/extract.0000003.o.gz  | LC_ALL=C sort     -T /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8719 2>> /dev/stderr | gzip -c > /home/d0mie/mosesSMT/Baseline/working/train/model/extract.o.sorted.gz 2>> /dev/stderr 
-Finished Thu Sep 26 00:30:31 2019
-(6) score phrases @ Thu Sep 26 00:30:31 EAT 2019
-(6.1)  creating table half /home/d0mie/mosesSMT/Baseline/working/train/model/phrase-table.half.f2e @ Thu Sep 26 00:30:31 EAT 2019
+split -d -l 1993 -a 7 /home/d0mie/mosesSMT/Baseline/corpus/training-data.txt.tok.en-sw.clean.sw /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291/target.split -d -l 1993 -a 7 /home/d0mie/mosesSMT/Baseline/corpus/training-data.txt.tok.en-sw.clean.en /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291/source.split -d -l 1993 -a 7 /home/d0mie/mosesSMT/Baseline/working/train/model/aligned.grow-diag-final-and /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291/align.merging extract / extract.inv
+gunzip -c /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291/extract.0000000.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291/extract.0000001.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291/extract.0000002.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291/extract.0000003.gz  | LC_ALL=C sort     -T /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291 2>> /dev/stderr | gzip -c > /home/d0mie/mosesSMT/Baseline/working/train/model/extract.sorted.gz 2>> /dev/stderr 
+gunzip -c /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291/extract.0000000.inv.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291/extract.0000001.inv.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291/extract.0000002.inv.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291/extract.0000003.inv.gz  | LC_ALL=C sort     -T /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291 2>> /dev/stderr | gzip -c > /home/d0mie/mosesSMT/Baseline/working/train/model/extract.inv.sorted.gz 2>> /dev/stderr 
+gunzip -c /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291/extract.0000000.o.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291/extract.0000001.o.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291/extract.0000002.o.gz /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291/extract.0000003.o.gz  | LC_ALL=C sort     -T /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5291 2>> /dev/stderr | gzip -c > /home/d0mie/mosesSMT/Baseline/working/train/model/extract.o.sorted.gz 2>> /dev/stderr 
+Finished Sun Oct 13 17:14:39 2019
+(6) score phrases @ Sun Oct 13 17:14:39 EAT 2019
+(6.1)  creating table half /home/d0mie/mosesSMT/Baseline/working/train/model/phrase-table.half.f2e @ Sun Oct 13 17:14:39 EAT 2019
 /home/d0mie/mosesSMT/mosesdecoder/scripts/generic/score-parallel.perl 4 "sort    " /home/d0mie/mosesSMT/mosesdecoder/scripts/../bin/score /home/d0mie/mosesSMT/Baseline/working/train/model/extract.sorted.gz /home/d0mie/mosesSMT/Baseline/working/train/model/lex.f2e /home/d0mie/mosesSMT/Baseline/working/train/model/phrase-table.half.f2e.gz  0 
 Executing: /home/d0mie/mosesSMT/mosesdecoder/scripts/generic/score-parallel.perl 4 "sort    " /home/d0mie/mosesSMT/mosesdecoder/scripts/../bin/score /home/d0mie/mosesSMT/Baseline/working/train/model/extract.sorted.gz /home/d0mie/mosesSMT/Baseline/working/train/model/lex.f2e /home/d0mie/mosesSMT/Baseline/working/train/model/phrase-table.half.f2e.gz  0 
 using gzip 
-Started Thu Sep 26 00:30:31 2019
-/home/d0mie/mosesSMT/mosesdecoder/scripts/../bin/score /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8779/extract.0.gz /home/d0mie/mosesSMT/Baseline/working/train/model/lex.f2e /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8779/phrase-table.half.0000000.gz  2>> /dev/stderr 
-/home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8779/run.0.sh/home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8779/run.1.sh/home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8779/run.2.sh/home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8779/run.3.shmv /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8779/phrase-table.half.0000000.gz /home/d0mie/mosesSMT/Baseline/working/train/model/phrase-table.half.f2e.gzrm -rf /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8779 
-Finished Thu Sep 26 00:31:04 2019
-(6.3)  creating table half /home/d0mie/mosesSMT/Baseline/working/train/model/phrase-table.half.e2f @ Thu Sep 26 00:31:04 EAT 2019
+Started Sun Oct 13 17:14:39 2019
+/home/d0mie/mosesSMT/mosesdecoder/scripts/../bin/score /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5365/extract.0.gz /home/d0mie/mosesSMT/Baseline/working/train/model/lex.f2e /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5365/phrase-table.half.0000000.gz  2>> /dev/stderr 
+/home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5365/run.0.sh/home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5365/run.1.sh/home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5365/run.2.sh/home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5365/run.3.shmv /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5365/phrase-table.half.0000000.gz /home/d0mie/mosesSMT/Baseline/working/train/model/phrase-table.half.f2e.gzrm -rf /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5365 
+Finished Sun Oct 13 17:15:15 2019
+(6.3)  creating table half /home/d0mie/mosesSMT/Baseline/working/train/model/phrase-table.half.e2f @ Sun Oct 13 17:15:15 EAT 2019
 /home/d0mie/mosesSMT/mosesdecoder/scripts/generic/score-parallel.perl 4 "sort    " /home/d0mie/mosesSMT/mosesdecoder/scripts/../bin/score /home/d0mie/mosesSMT/Baseline/working/train/model/extract.inv.sorted.gz /home/d0mie/mosesSMT/Baseline/working/train/model/lex.e2f /home/d0mie/mosesSMT/Baseline/working/train/model/phrase-table.half.e2f.gz --Inverse 1 
 Executing: /home/d0mie/mosesSMT/mosesdecoder/scripts/generic/score-parallel.perl 4 "sort    " /home/d0mie/mosesSMT/mosesdecoder/scripts/../bin/score /home/d0mie/mosesSMT/Baseline/working/train/model/extract.inv.sorted.gz /home/d0mie/mosesSMT/Baseline/working/train/model/lex.e2f /home/d0mie/mosesSMT/Baseline/working/train/model/phrase-table.half.e2f.gz --Inverse 1 
 using gzip 
-Started Thu Sep 26 00:31:05 2019
-/home/d0mie/mosesSMT/mosesdecoder/scripts/../bin/score /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8822/extract.0.gz /home/d0mie/mosesSMT/Baseline/working/train/model/lex.e2f /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8822/phrase-table.half.0000000.gz --Inverse  2>> /dev/stderr 
-/home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8822/run.0.sh/home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8822/run.1.sh/home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8822/run.2.sh/home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8822/run.3.shgunzip -c /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8822/phrase-table.half.*.gz 2>> /dev/stderr| LC_ALL=C sort     -T /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8822  | gzip -c > /home/d0mie/mosesSMT/Baseline/working/train/model/phrase-table.half.e2f.gz  2>> /dev/stderr rm -rf /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.8822 
-Finished Thu Sep 26 00:31:42 2019
-(6.6) consolidating the two halves @ Thu Sep 26 00:31:42 EAT 2019
+Started Sun Oct 13 17:15:15 2019
+/home/d0mie/mosesSMT/mosesdecoder/scripts/../bin/score /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5425/extract.0.gz /home/d0mie/mosesSMT/Baseline/working/train/model/lex.e2f /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5425/phrase-table.half.0000000.gz --Inverse  2>> /dev/stderr 
+/home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5425/run.0.sh/home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5425/run.1.sh/home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5425/run.2.sh/home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5425/run.3.shgunzip -c /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5425/phrase-table.half.*.gz 2>> /dev/stderr| LC_ALL=C sort     -T /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5425  | gzip -c > /home/d0mie/mosesSMT/Baseline/working/train/model/phrase-table.half.e2f.gz  2>> /dev/stderr rm -rf /home/d0mie/mosesSMT/Baseline/working/train/model/tmp.5425 
+Finished Sun Oct 13 17:15:53 2019
+(6.6) consolidating the two halves @ Sun Oct 13 17:15:53 EAT 2019
 Executing: /home/d0mie/mosesSMT/mosesdecoder/scripts/../bin/consolidate /home/d0mie/mosesSMT/Baseline/working/train/model/phrase-table.half.f2e.gz /home/d0mie/mosesSMT/Baseline/working/train/model/phrase-table.half.e2f.gz /dev/stdout | gzip -c > /home/d0mie/mosesSMT/Baseline/working/train/model/phrase-table.gz
 Consolidate v2.0 written by Philipp Koehn
 consolidating direct and indirect rule tables
 ....
 Executing: rm -f /home/d0mie/mosesSMT/Baseline/working/train/model/phrase-table.half.*
-(7) learn reordering model @ Thu Sep 26 00:31:54 EAT 2019
-(7.1) [no factors] learn reordering model @ Thu Sep 26 00:31:54 EAT 2019
-(7.2) building tables @ Thu Sep 26 00:31:54 EAT 2019
+(7) learn reordering model @ Sun Oct 13 17:16:07 EAT 2019
+(7.1) [no factors] learn reordering model @ Sun Oct 13 17:16:07 EAT 2019
+(7.2) building tables @ Sun Oct 13 17:16:07 EAT 2019
 Executing: /home/d0mie/mosesSMT/mosesdecoder/scripts/../bin/lexical-reordering-score /home/d0mie/mosesSMT/Baseline/working/train/model/extract.o.sorted.gz 0.5 /home/d0mie/mosesSMT/Baseline/working/train/model/reordering-table. --model "wbe msd wbe-msd-bidirectional-fe"
 Lexical Reordering Scorer
 scores lexical reordering models of several types (hierarchical, phrase-based and word-based-extraction
-(8) learn generation model @ Thu Sep 26 00:32:06 EAT 2019
+(8) learn generation model @ Sun Oct 13 17:16:20 EAT 2019
   no generation model requested, skipping step
-(9) create moses.ini @ Thu Sep 26 00:32:06 EAT 2019
+(9) create moses.ini @ Sun Oct 13 17:16:20 EAT 2019
